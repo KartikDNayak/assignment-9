@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            
+            background-color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .main-container {
+            background-color: rgb(244, 243, 243);
+            margin:30px auto;
+            border: 6px solid green;
+            border-radius: 4px;
+            width:600px;
+            padding:20px 25px;
+            box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+        }
+
+        .main-container h3 {
+            text-align: center;
+            color: blue;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: 500;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            box-sizing: border-box;
+        }
+
+        .radio-group,
+        .checkbox-group{
+            margin-top:8px;
+        }
+
+        .radio-group label,
+        .checkbox-group label{
+            display:block;
+            font-weight:normal;
+            margin-top:5px;
+        }
+
+        button{
+            width:100%;
+            margin-top:20px;
+            padding:10px;
+            background-color:#1fb56a;
+            color:black;
+            border:none;
+            font-size:16px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background-color:#18a35f;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <h3>Assignment 9: Task-2 Survey Form</h3>
+        <form action="">
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Age</label>
+            <input type="number" placeholder="Enter your age">
+
+             <label>Which option best describes you?</label>
+            <select>
+                <option selected>Student</option>
+                <option>Working Professional</option>
+                <option>Self-Employed</option>
+                <option>Other</option>
+            </select>
+
+            <label>Would you recommend?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="r"> Yes</label>
+                <label><input type="radio" name="r"> No</label>
+                <label><input type="radio" name="r"> Maybe</label>
+            </div>
+
+            <label>Languages and Frameworks known (Check all that apply)</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox"> C</label>
+                <label><input type="checkbox"> C++</label>
+                <label><input type="checkbox"> C#</label>
+                <label><input type="checkbox"> Java</label>
+                <label><input type="checkbox"> Python</label>
+                <label><input type="checkbox"> JavaScript</label>
+                <label><input type="checkbox"> React</label>
+                <label><input type="checkbox"> Angular</label>
+                <label><input type="checkbox"> Django</label>
+                <label><input type="checkbox"> Spring</label>
+            </div>
+
+            <label>Any comments or suggestions</label>
+            <textarea placeholder="Enter your comment here"></textarea>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
