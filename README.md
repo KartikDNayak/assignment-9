@@ -1,4 +1,4 @@
-# Assignment 5 – Web Development Tasks
+# Assignment 9 – Web Development Tasks
 
 This repository contains assignment 9 in three parts built using **HTML and CSS**.
 
